@@ -7,11 +7,9 @@ const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
-app.use(express.urlencoded({
-  extened: true
-}));
+app.use(express.urlencoded({ extened: true }));
 app.use(express.json());
 
 app.use(express.static(__dirname + '/public'));
