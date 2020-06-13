@@ -11,7 +11,8 @@ const PORT = process.env.PORT || 3300;
 
 app.use(express.urlencoded({ extened: true }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
+app.use(express.static('./'));
 
 
 app.get("/notes", (req, res) => {
