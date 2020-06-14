@@ -140,7 +140,7 @@ var renderNoteList = function (notes) {
   $noteList.append(noteListItems);
 };
 
-$editBtn.click(function () {
+$(".edit-note").click(function () {
   if (activeNote.id) {
     $noteTitle.attr("readonly", false);
     $noteText.attr("readonly", false);
