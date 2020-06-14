@@ -127,7 +127,7 @@ var renderNoteList = function (notes) {
     var $li = $("<li class='list-group-item'>").data(note);
     var $span = $("<span>").text(note.title);
     var $editBtn = $(
-      "<i class='fas fa-pen float-right edit-note'>"
+      "<i style='margin-left: 10px;' class='fas fa-pen float-right text-light edit-note'>"
     )
     var $delBtn = $(
       "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
@@ -142,10 +142,8 @@ var renderNoteList = function (notes) {
 
 $(".edit-note").click(function () {
   if (activeNote.id) {
-    $noteTitle.attr("readonly", false);
-    $noteText.attr("readonly", false);
-    $noteTitle.val(activeNote.title);
-    $noteText.val(activeNote.text);
+    $noteTitle.attr("contenteditable", true);
+    $noteText.attr("contenteditable", true);
   };
 })
 // Gets notes from the db and renders them to the sidebar
