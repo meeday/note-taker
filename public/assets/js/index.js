@@ -49,8 +49,8 @@ var renderActiveNote = function () {
   $saveNoteBtn.hide();
 
   if (activeNote.id) {
-    $noteTitle.attr("readonly", false);
-    $noteText.attr("readonly", false);
+    $noteTitle.attr("readonly", true);
+    $noteText.attr("readonly", true);
     $noteTitle.val(activeNote.title);
     $noteText.val(activeNote.text);
   } else {
@@ -126,12 +126,11 @@ var renderNoteList = function (notes) {
 
     var $li = $("<li class='list-group-item'>").data(note);
     var $span = $("<span>").text(note.title);
-    var $editBtn = $("<i style='margin-right: 20px;' class='fas fa-pen float-right text-light edit-note'>")
     var $delBtn = $(
       "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
     );
 
-    $li.append($span, $editBtn, $delBtn);
+    $li.append($span, $delBtn);
     noteListItems.push($li);
   }
 
