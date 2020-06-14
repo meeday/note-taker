@@ -138,6 +138,9 @@ html, body {
 
 .page.three {
   z-index: 2;
+}
+
+.threeAnimate {
   animation: three 2s ease-in;
 }
 
