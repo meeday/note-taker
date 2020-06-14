@@ -21,7 +21,7 @@ app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/notes.html"));
 })
 // get method returns the index.html file
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 })
 // reads the db.json file and returns saved notes in JSON format
