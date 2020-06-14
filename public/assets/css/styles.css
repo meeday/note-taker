@@ -75,7 +75,7 @@ html, body {
   cursor: pointer;
 }
 
-.paper, .list-group-item {
+.paper {
   font: normal 12px/1.5 "Lucida Grande", arial, sans-serif;
   margin: 0 auto;
   padding: 6px 5px 4px 42px;
