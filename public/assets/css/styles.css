@@ -127,12 +127,12 @@ html, body {
 .notepad .cover {
   background: linear-gradient(to right, #24374a 10%, #33495f 10%);
   transform-origin: left center;
-  transition: 2s;
+  transition: 1s;
   z-index: 20;
 }
 
 .coverAnimate {
-  animation: flip 1.5s ease-in;
+  animation: flip 1s ease-in;
 }
 
 .notepad .page {
@@ -155,7 +155,7 @@ html, body {
   z-index: 4;
 }
 .oneAnimate {
-  animation: one 2s ease-in;
+  animation: one 1s ease-in;
 }
 
 .page.one:before {
@@ -167,7 +167,7 @@ html, body {
 }
 
 .twoAnimate {
-  animation: two 2s ease-in;
+  animation: two 1s ease-in;
 }
 
 .page.three {
@@ -175,7 +175,7 @@ html, body {
 }
 
 .threeAnimate {
-  animation: three 2s ease-in;
+  animation: three 1s ease-in;
 }
 
 .page.four {
