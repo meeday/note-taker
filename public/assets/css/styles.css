@@ -130,7 +130,7 @@ html, body {
   transition: 1s;
   z-index: 20;
 }
-
+/* this class is added after click in javascript */
 .coverAnimate {
   animation: flip 1s ease-in;
 }
@@ -154,6 +154,7 @@ html, body {
 .page.one {
   z-index: 4;
 }
+/* this class is added after click in javascript */
 .oneAnimate {
   animation: one 1s ease-in;
 }
@@ -165,7 +166,7 @@ html, body {
 .page.two {
   z-index: 3;
 }
-
+/* this class is added after click in javascript */
 .twoAnimate {
   animation: two 1s ease-in;
 }
@@ -173,7 +174,7 @@ html, body {
 .page.three {
   z-index: 2;
 }
-
+/* this class is added after click in javascript */
 .threeAnimate {
   animation: three 1s ease-in;
 }
