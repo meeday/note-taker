@@ -119,6 +119,8 @@ html, body {
 
 .page.one {
   z-index: 4;
+}
+.oneAnimate {
   animation: one 2s ease-in;
 }
 
