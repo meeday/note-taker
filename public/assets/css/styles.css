@@ -34,6 +34,7 @@ html, body {
   height: 50px;
   margin-top: 13px;
   font-size: 3rem;
+  background-color: #623B18;
 }
 
 .note-title:read-only, .note-textarea:read-only {
