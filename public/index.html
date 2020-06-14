@@ -15,13 +15,14 @@
     <a class="navbar-brand" href="/">Note Taker
     </a>
   </nav>
+  <!-- Home screen shows a notebook that opens up when the 'get started' button is clicked -->
   <div class="notepad">
     <div class="cover">
       <div style="margin-top: 80px; background: transparent;" class="jumbotron text-center">
         <h1 style="color: white;" class="display-4">Note Taker</h1>
-
+<!-- Javascript settimeout function added in order to delay the loading of page. This to allow for the animation to show -->
         <a id="start-btn" class="btn btn-primary btn-lg mt-4"
-          href="javascript:setTimeout(()=>{window.location = '/notes' },1000);" role="button">Get Started</a>
+          href="javascript:setTimeout(()=>{window.location = '/notes' },500);" role="button">Get Started</a>
       </div>
     </div>
     <div class="page one">
