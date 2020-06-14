@@ -95,6 +95,9 @@ html, body {
   transform-origin: left center;
   transition: 2s;
   z-index: 20;
+}
+
+.coverAnimate {
   animation: flip 3s ease-in;
 }
 
