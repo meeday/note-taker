@@ -6,23 +6,25 @@ const util = require("util");
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
+// express method put into an app const and PORT to be used specified
 const app = express();
 const PORT = process.env.PORT || 3300;
 
+// express middleware to access public file for proper css and js loading
 app.use(express.urlencoded({ extened: true }));
 app.use(express.json());
 app.use(express.static(__dirname + '/public'));
 app.use(express.static('./'));
 
-
+// get method returns the notes.html file
 app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/notes.html"));
 })
-
+// get method returns the index.html file
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 })
-
+// reads the db.json file and returns saved notes in JSON format
 app.get("/api/notes", (req, res) => {
   readFileAsync("./db/db.json", "utf-8")
     .then(data => {
@@ -33,6 +35,7 @@ app.get("/api/notes", (req, res) => {
     })
 });
 
+// Receives new notes and saves them in the db.json file and then returns it back to the client
 app.post("/api/notes", async (req, res) => {
   try {
       const data = await readFileAsync("./db/db.json", "utf-8"); 
@@ -57,7 +60,7 @@ app.post("/api/notes", async (req, res) => {
       throw err;
   }
 });
-
+// Deletes the object with matching id
 app.delete("/api/notes/:id", async (req, res) => {
   try {
       const noteID = req.params.id;
@@ -82,7 +85,7 @@ app.delete("/api/notes/:id", async (req, res) => {
       throw err;
   }
 })
-
+// listener for the server connection and console logs a success message
 app.listen(PORT, () => {
   console.log(`App listening on PORT: ${PORT}`);
 });

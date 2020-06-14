@@ -127,12 +127,12 @@ html, body {
 .notepad .cover {
   background: linear-gradient(to right, #24374a 10%, #33495f 10%);
   transform-origin: left center;
-  transition: 2s;
+  transition: 1s;
   z-index: 20;
 }
-
+/* this class is added after click in javascript */
 .coverAnimate {
-  animation: flip 1.5s ease-in;
+  animation: flip 1s ease-in;
 }
 
 .notepad .page {
@@ -154,8 +154,9 @@ html, body {
 .page.one {
   z-index: 4;
 }
+/* this class is added after click in javascript */
 .oneAnimate {
-  animation: one 2s ease-in;
+  animation: one 1s ease-in;
 }
 
 .page.one:before {
@@ -165,17 +166,17 @@ html, body {
 .page.two {
   z-index: 3;
 }
-
+/* this class is added after click in javascript */
 .twoAnimate {
-  animation: two 2s ease-in;
+  animation: two 1s ease-in;
 }
 
 .page.three {
   z-index: 2;
 }
-
+/* this class is added after click in javascript */
 .threeAnimate {
-  animation: three 2s ease-in;
+  animation: three 1s ease-in;
 }
 
 .page.four {
