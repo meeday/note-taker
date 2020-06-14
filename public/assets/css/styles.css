@@ -130,6 +130,9 @@ html, body {
 
 .page.two {
   z-index: 3;
+}
+
+.twoAnimate {
   animation: two 2s ease-in;
 }
 
