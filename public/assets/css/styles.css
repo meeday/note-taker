@@ -35,7 +35,7 @@ html, body {
   height: 50px;
   margin-top: 13px;
   font-size: 3rem;
-  background-color: #623B18;
+  background-color: #281691;
 }
 
 .note-title:read-only, .note-textarea:read-only {
@@ -76,12 +76,12 @@ html, body {
 }
 
 .paper {
-  font: normal 12px/1.5 "Lucida Grande", arial, sans-serif;
+  font: normal 25px/2.5 "Lucida Grande", arial, sans-serif;
   margin: 0 auto;
   padding: 6px 5px 4px 42px;
   position: relative;
   color: #444;
-  line-height: 20px;
+  line-height: 40px;
   border: 1px solid #d2d2d2;
   background: #fff;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
@@ -90,11 +90,11 @@ html, body {
   background: -ms-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
   background: -o-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
   background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
-  -webkit-background-size: 100% 20px;
-  -moz-background-size: 100% 20px;
-  -ms-background-size: 100% 20px;
-  -o-background-size: 100% 20px;
-  background-size: 100% 20px;
+  -webkit-background-size: 100% 40px;
+  -moz-background-size: 100% 40px;
+  -ms-background-size: 100% 40px;
+  -o-background-size: 100% 40px;
+  background-size: 100% 40px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
