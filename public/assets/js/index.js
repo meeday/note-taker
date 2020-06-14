@@ -131,7 +131,7 @@ var renderNoteList = function (notes) {
       "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
     );
 
-    $li.append($span, $delBtn);
+    $li.append($span, $editBtn, $delBtn);
     noteListItems.push($li);
   }
 
