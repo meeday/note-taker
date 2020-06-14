@@ -48,6 +48,10 @@ var deleteNote = function (id) {
 var renderActiveNote = function () {
   $saveNoteBtn.hide();
 
+  $(".edit-note").click(function () {
+      $noteTitle.attr("contenteditable", true);
+      $noteText.attr("contenteditable", true);
+  })
   if (activeNote.id) {
     $noteTitle.attr("readonly", true);
     $noteText.attr("readonly", true);
@@ -140,12 +144,7 @@ var renderNoteList = function (notes) {
   $noteList.append(noteListItems);
 };
 
-$(".edit-note").click(function () {
-  if (activeNote.id) {
-    $noteTitle.attr("contenteditable", true);
-    $noteText.attr("contenteditable", true);
-  };
-})
+
 // Gets notes from the db and renders them to the sidebar
 var getAndRenderNotes = function () {
   return getNotes().then(function (data) {
