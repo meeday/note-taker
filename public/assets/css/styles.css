@@ -44,7 +44,6 @@ html, body {
 
 .list-container .card {
   top: 8%;
-  padding-top: 15px;
   height: calc(100vh - 70px);
   border-bottom: none;
   border-bottom-right-radius: 0;
@@ -52,6 +51,7 @@ html, body {
 }
 
 .list-container {
+  top: 8%;
   padding-left: 0;
 }
 
